@@ -3,11 +3,10 @@ package me.chunyu.spike.wcl_permission_demo;
 import android.Manifest;
 import android.content.Intent;
 import android.os.Bundle;
-import android.support.design.widget.Snackbar;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
 
-import butterknife.Bind;
+import butterknife.BindView;
 import butterknife.ButterKnife;
 
 public class MainActivity extends AppCompatActivity {
@@ -20,7 +19,7 @@ public class MainActivity extends AppCompatActivity {
             Manifest.permission.MODIFY_AUDIO_SETTINGS
     };
 
-    @Bind(R.id.main_t_toolbar) Toolbar mTToolbar;
+    @BindView(R.id.main_t_toolbar) Toolbar mTToolbar;
 
     private PermissionsChecker mPermissionsChecker; // 权限检测器
 
